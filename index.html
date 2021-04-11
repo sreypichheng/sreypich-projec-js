@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FoodList</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="page-banner">
+          <h1 class="title">Foods Order</h1>
+        </div>
+      </header>
+      <form id="add-food">Name of food:
+      
+        <input id="add-food-textfield" type="text" placeholder="name a Foods..." /><br>
+        
+        <label>Quality plate:
+      
+        <input id="quality" type="number" placeholder="Quality a Foods..." min="1"  max="10"/><br>
+      </label>
+      <label for="#">Price per one:
+        <input type="number" id="price" placeholder="Price per one ($)" min="1" max="10">
+      </label><br>
+        <!-- <input type="date" id="date" /><br> -->
+
+        <label for="#">Date​​​​​ Order:
+          <input type="date" id="date" />
+        </label><br>
+
+        
+
+        <button> SUBMIT </button>
+       
+       <!-- <input type="date" id="date" /><br> -->
+       <!-- <button id="set_date">Set Date</button> -->
+    </form>
+  </div>
+  <div class="group">
+    <button id="create">CREATE</button>
+    <div id="food-list"><br>
+      <!-- <h2 class="title">LIST OF FOODS</h2><hr> -->
+      <form action="" id="search-foods">
+        <input type="text" placeholder="Search Foods..." />
+      </form>
+      <ul>
+        <li class="box">
+          <span class="name">02-04-2021 Slagari: 2 Total=5$</span>
+          <span class="delete">remove</span>
+          <!-- <span class="edit">edit</span> -->
+        </li>
+        <li class="box">
+          <span class="name">03-04-2021 Gingerbread: 2 Total=10$</span>
+          <span class="delete">remove</span>
+          <!-- <span class="edit">edit</span> -->
+        </li>
+        <li class="box">
+          <span class="name">04-04-2001 Boil: 2 Total=6$</span>
+          <span class="delete">remove</span>
+          <!-- <span class="edit">edit</span> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- <button id="create">CREATE</button> -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
